@@ -1,0 +1,203 @@
+body {
+  background: #f0e7ea;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0px;
+}
+
+a {
+  color: #ec0e5c;
+  text-decoration-line: none;
+  font-weight: 600;
+}
+
+a:hover {
+  /* text-decoration-line: underline; */
+}
+
+.center {
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+button, input {
+  font-family: "Nunito";
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  background: rgb(68, 51, 56) !important;
+  border-bottom: 1px solid #a89e9e !important;
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark {
+  background: rgb(45, 32, 36) !important;
+  color: #fff !important;
+  box-shadow: 1px 1px 3px 0px #3c37376e !important;
+  border: 1px solid #574747;
+}
+
+.apexcharts-gridline {
+  /* filter: drop-shadow( 0px 1px 0px rgba(240, 240, 240, 0.13)); */
+  /* filter: drop-shadow(0 -1px 0px hsl(338deg 20% 90% / 100%)); */
+  filter: var(--gridline-drop-shadow);
+}
+
+.apexcharts-xaxis > line {
+  filter: drop-shadow(0px 1px 0px rgba(240, 240, 240, 0.13));
+}
+
+.apexcharts-pan-icon.apexcharts-selected > svg {
+  stroke: #6e8192 !important;
+  fill: hsl(339deg 89% 49% / 100%) !important;
+}
+
+.apexcharts-zoom-icon.apexcharts-selected > svg {
+  fill: hsl(339deg 89% 49% / 100%) !important;
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-dark {
+  background: rgb(45, 32, 36) !important;
+}
+.apexcharts-xaxistooltip.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark {
+  background: rgb(45, 32, 36) !important;
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark::before {
+  border-bottom-color: rgba(45, 32, 36, 0.5) !important;
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark::after {
+  border-bottom-color: rgba(45, 32, 36, 1) !important;
+}
+
+.progressbar .buffer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  display: block;
+  background-color: #ec0e5c;
+  background-size: 80px 50px;
+  background-image: linear-gradient(
+    115deg,
+    rgb(255 255 255 / 0%) 10%,
+    #ffffff00 35%,
+    #ffffff00 50%,
+    rgb(0 0 0 / 0.15) 50%,
+    rgb(0 0 0 / 0.15) 75%,
+    #ffffff00 75%,
+    #ffffff00
+  );
+  animation: buffermove 5s linear infinite;
+}
+
+.alert-color {
+  color: #f03a17;
+}
+
+@keyframes buffermove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 80px 0;
+  }
+}
+
+@keyframes bufferblink {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes ycpblink {
+  0% {
+    box-shadow: 0px 0px 5px #ec0e5c;
+  }
+  50% {
+    box-shadow: 0px 0px 20px #ec0e5c;
+  }
+  100% {
+    box-shadow: 0px 0px 5px #ec0e5c;
+  }
+}
+
+.address.combine > span {
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.tooltip {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  border-radius: 150px !important;
+  border: 2px solid !important;
+}
+
+.tooltip {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  border-radius: 150px !important;
+  border: 2px solid !important;
+}
+
+.ui.pagination.menu .item {
+  min-width: 3em;
+  text-align: center;
+  color: var(--pagination-text-color);
+}
+
+.ui.pagination.menu .item:hover {
+  min-width: 3em;
+  text-align: center;
+  color: var(--pagination-text-color);
+}
+
+.ui.pagination.menu .active.item {
+  min-width: 3em;
+  text-align: center;
+  color: #ec105a;
+  background-color: var(--pagination-background-color);
+}
+
+.farm-tvl {
+  color: hsl(338deg 100% 41% / 100%);
+    font-size: 54px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 54px;
+}
+
+.farm-apr {
+  color: hsl(338deg 7% 52% / 100%);
+  text-align: center;
+}
+
+.top-card-value {
+  color: hsl(338deg 95% 4% / 100%);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  line-height: normal;
+}
